@@ -28,7 +28,12 @@ const loadData = () => {
             
             const locationEl = document.createElement("span")
             locationEl.innerText = location
-            console.log(locationEl)
+            
+            document.body.appendChild(avatarEl)
+            document.body.appendChild(nameEl)
+            document.body.appendChild(bioEl)
+            document.body.appendChild(followersEl)
+            document.body.appendChild(locationEl)
 
 
         }
