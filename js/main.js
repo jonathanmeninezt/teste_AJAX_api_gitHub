@@ -5,7 +5,8 @@ const loadData = () => {
     xhr.send(null)
     xhr.onreadystatechange = () =>{
         if (xhr.readyState === 4){
-            console.log(xhr.responseText)
+            const res = JSON.parse(xhr.responseText)
+            console.log(res)
         }
     }
 }
